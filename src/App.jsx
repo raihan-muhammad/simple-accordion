@@ -1,4 +1,5 @@
 import "./styles.css";
+import Accordion from "./Accordion";
 
 const faqs = [
   {
@@ -18,11 +19,7 @@ const faqs = [
 export default function App() {
   return (
     <div>
-      <Accordion />
+      <Accordion data={faqs} />
     </div>
   );
-}
-
-function Accordion() {
-  return <div>TODO</div>;
 }
